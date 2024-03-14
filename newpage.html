@@ -51,16 +51,19 @@
       }
 
       .soft-section{
-        width: 1020px;
+        width: 100%;
+        max-width: 1020px;
         margin: 100px auto;
       }
 
       .soft-img{
-        width: 700px;
+        width: 100%;
+        max-width: 400px;
       }
 
       .soft-text {
-        width: 600px;
+        width: 100%;
+        max-width: 600px;
       }
 
       .soft-heading {
@@ -72,7 +75,28 @@
         padding-top: 150px;
       }
 
-      
+      @media (max-width: 768px) {
+        .service-text {
+          width: 100%;
+          padding: 0 15px;
+          text-align: justify;
+          padding-right: 30px;
+        }
+        .soft-section {
+          margin: 50px auto;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .soft-img,
+        .soft-text {
+          max-width: 100%;
+          width: 100%;
+        }
+        .soft-heading {
+          padding-top: 50px;
+        }
+      }
       
     </style>
   </head>
@@ -92,7 +116,7 @@
 
         <!-- First -->
         <section class="mt-5">
-            <div class="d-flex justify-content-center gap-2 soft-section">
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-2 soft-section">
                 <div class="p-4 soft-img">
                     <img src="home-dev.png" alt="" class="img-fluid">
                 </div>
@@ -105,7 +129,7 @@
 
         <!-- Second -->
         <section class="mt-5">
-            <div class="d-flex justify-content-center gap-2 soft-section">
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-2 soft-section">
                 <div class="p-4 soft-text">
                     <h3 class="soft-heading">Web Application<br>Development</h3>
                     <p class="text-justify">Enosis looks beyond conventional solutions to develop disruptive web products. Our skilled and dedicated web development team understands your needs and leverage the dynamism of modern web frameworks to create business valued web applications.</p>
@@ -118,7 +142,7 @@
 
         <!-- Third -->
         <section class="mt-5">
-            <div class="d-flex justify-content-center gap-2 soft-section">
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-2 soft-section">
                 <div class="p-4 soft-img">
                     <img src="home-mobile.png" alt="" class="img-fluid">
                 </div>
@@ -131,7 +155,7 @@
 
         <!-- Fourth -->
         <section class="mt-5">
-            <div class="d-flex justify-content-center gap-2 soft-section">
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-2 soft-section">
                 <div class="p-4 soft-text">
                     <h3 class="soft-heading">Quality Assurance &<br>Testing</h3>
                     <p>Treading on Agile development methodologies and Rational Unified Process practices in testing, Enosis ensures highest quality of software solutions to you. Our software testing strategy ensures every component of your software are free of bugs and issues.</p>
